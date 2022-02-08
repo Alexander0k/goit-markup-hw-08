@@ -1,0 +1,87 @@
+.hero {
+  min-width: 450px;
+  padding: 118px 0;
+  background-color: #2f303a;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../../images/mob/hero-mob-1x.png);
+  @media (min-device-pixel-ratio: 2) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/mob/hero-mob-2x.jpg);
+  }
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media (min-width: 768px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/tab/hro-bat-1x.jpg);
+    @media (min-device-pixel-ratio: 2) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../../images/tab/hero-tab-2x.jpg);
+    }
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @media (min-width: 1200px) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../../images/hero.jpg);
+      @media (min-device-pixel-ratio: 2) {
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url(../../images/hero-desk-2x.jpg);
+      }
+      padding: 200px 0;
+    }
+  }
+  &__title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    @media (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 1.36;
+      min-width: 696px;
+    }
+  }
+  &__btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    display: flex;
+    margin-top: 30px;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    background: #2196f3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 50px;
+  }
+}

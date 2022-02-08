@@ -1,0 +1,33 @@
+.check {
+  margin-left: 14px;
+  &__text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: #757575;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+  }
+  &__text::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border: 2px solid #000000;
+    border-radius: 2px;
+    margin-right: 7px;
+  }
+
+  &__policy:checked + &__text::before {
+    border: none;
+    background-image: url(../images/icon_check.svg);
+    background-repeat: no-repea;
+    background-position: center;
+    background-size: cover;
+  }
+  &__text-item {
+    color: #2196f3;
+    margin-left: 4px;
+  }
+}

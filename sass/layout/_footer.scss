@@ -1,0 +1,197 @@
+.footer {
+  background-color: #2f303a;
+  &__conteiner {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    position: relative;
+  }
+  &__conteiner-wrap {
+    flex-wrap: wrap;
+    display: flex;
+    justify-self: flex-start;
+    align-items: center;
+  }
+}
+.address {
+  &__logo {
+    display: block;
+    margin-bottom: 20px;
+    display: inline;
+  }
+
+  &__logo-web {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #2196f3;
+  }
+
+  &__logo-studio {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+  }
+  &__home {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+  }
+
+  &__item {
+    display: block;
+    margin-top: 20px;
+  }
+  &__mail {
+    margin-top: 9px;
+  }
+  &__tel {
+    margin-top: 9px;
+  }
+  &__mail {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.02em;
+    margin-bottom: 9px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &__tel {
+    margin-top: 9px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+.footer-social {
+  margin-left: 70px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  &__icon-titel {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  &__icon-list {
+    display: flex;
+    justify-content: flex-start;
+    width: 231px;
+    height: 81px;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  &__icon {
+    fill: #ffffff;
+    width: 20px;
+    height: 20px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__item + &__item {
+    margin-left: 10px;
+  }
+  &__link {
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__link:hover,
+  &__link:focus {
+    background-color: #2196f3;
+  }
+
+  &__link:hover &__icon,
+  &__link:focus &__icon {
+    fill: #ffffff;
+  }
+}
+.subscribe {
+  position: absolute;
+  left: 600px;
+  top: 72px;
+  &__titel {
+    margin-bottom: 20px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  &__wrap {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+  }
+  &__form {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+  }
+  &__input {
+    padding-left: 16px;
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: #ffffff;
+  }
+  &__input::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+  }
+  &__btn {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    width: 200px;
+    height: 50px;
+    background: #2196f3;
+    border-radius: 4px;
+  }
+  &__icon {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    fill: #ffffff;
+  }
+}
