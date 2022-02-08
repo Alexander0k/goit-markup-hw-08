@@ -1,5 +1,4 @@
 .hero {
-  min-width: 450px;
   padding: 118px 0;
   background-color: #2f303a;
   background-image: linear-gradient(
@@ -57,7 +56,6 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #ffffff;
-    max-width: 360px;
     margin-left: auto;
     margin-right: auto;
     @media (min-width: 1200px) {
