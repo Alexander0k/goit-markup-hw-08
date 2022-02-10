@@ -406,10 +406,16 @@ body {
   margin-bottom: 32px;
   display: block;
   font-weight: 500;
-  font-size: 34px;
+  font-size: 33px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #2196f3;
+}
+
+@media (min-width: 480px) {
+  .mob-conecot__tel {
+    font-size: 34px;
+  }
 }
 
 .mob-conecot__mail {
@@ -438,10 +444,17 @@ body {
 .mob-social__list {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .mob-social__list :not(:last-child) {
   margin-right: 10px;
+}
+
+@media (min-width: 480px) {
+  .mob-social__list {
+    flex-wrap: nowrap;
+  }
 }
 
 .mob-social__link {
