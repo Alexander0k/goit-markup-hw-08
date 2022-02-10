@@ -49,25 +49,53 @@
             </li>
             </ul>
         </div>
-        </div>
+        <!------------------MENU-MOB------------------>
         <div class="menu-mob">
-            <div class="menu-mob__open">
-                <svg class="menu-mob_open-icon">
-                    <use href=""></use>
-                </svg>
-            </div>
+            <button type="button" class="menu-mob__open-btn" data-menu-open>
+            <svg class="menu-mob_open-icon" width="40" height="40">
+                    <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+            </button>
         </div>
-        <div class="menu-mob__window-menu">
-            <div class="window-menu__close">
-                <svg class="window-menu__close-icon">
-                    <use href=""></use>
+    <div class="window-menu is-hidden" data-menu>    
+        <button type="button" class="window-menu__close-btn" data-menu-close    >
+                <svg class="window-menu__close-icon" width="40" height="40">
+                    <use href="./images/icons.svg#icon-close-menu"></use>
                 </svg>
-            </div>
-            <ul class="window-menu__list">
-                <li class="window-menu_item"></li>
-                <li class="window-menu_item"></li>
-                <li class="window-menu_item"></li>
-            </ul>
+         </button>
+        <ul class="list window-menu__list">
+            <li class="window-menu__item "><a class="window-menu__link" href="">Студия</a></li>
+            <li class="window-menu__item "><a class="window-menu__link" href="">Портфолио</a></li>
+            <li class="window-menu__item "><a class="window-menu__link" href="">Контакты</a></li>
+        </ul>
+    <ul class="list mob-conecot_list">
+    <li class="mob-conecot__item">
+        <li class="mob-conecot__item">
+            <a class="link mob-conecot__tel" href="tel:+380961111111">
+                +38 096 111 11 11
+            </a>
+        </li>
+        <a class="link mob-conecot__mail" href="mailto:info@devstudio.com">           
+            info@devstudio.com
+        </a>
+    </li>
+</ul>
+    <div class="mob-social">
+        <ul class="list mob-social__list">
+            <li class="mob-social__item">
+                <a href="" class="mob-social__link">Instagram</a>
+            </li>
+            <li class="mob-social__item">
+                <a href="" class="mob-social__link">Twitter</a>
+            </li>
+            <li class="mob-social__item">
+                <a href="" class="mob-social__link">Facebook</a>
+            </li>
+            <li class="mob-social__item">
+                <a href="" class="mob-social__link">LinkedIn</a>
+            </li>
+        </ul>
+    </div>
         </div>
     </header>
     <!------------------HERO------------------>
@@ -360,7 +388,7 @@
             </div>
         </section>
     <!------------------FOOTER------------------>
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="conteiner footer__conteiner">
             <div class="footer__conteiner-wrap">
             <address class="address">
@@ -432,9 +460,9 @@
             </div>
         </div>
         
-    </footer> -->
+    </footer>
     <!------------------MODAL------------------>
-    <!-- <div class="modal is-hidden" data-modal>
+    <div class="modal is-hidden" data-modal>
         <div class="modal__oupen">
         <button type="button" class="modal__close" data-modal-close>
             <svg class="modal__icon" >
@@ -487,7 +515,8 @@
         </form>
     </div>
         
-    </div> -->
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>

@@ -3,40 +3,66 @@
   &__conteiner {
     padding-top: 60px;
     padding-bottom: 60px;
-    position: relative;
+    @media (min-width: 768px) {
+      position: relative;
+    }
   }
   &__conteiner-wrap {
-    flex-wrap: wrap;
-    display: flex;
-    justify-self: flex-start;
-    align-items: center;
+    @media (min-width: 1200px) {
+      flex-wrap: wrap;
+      display: flex;
+      justify-self: flex-start;
+      align-items: center;
+    }
   }
 }
 .address {
   &__logo {
-    display: block;
     margin-bottom: 20px;
-    display: inline;
+    text-align: center;
+    display: block;
+    @media (min-width: 1200px) {
+      display: inline;
+    }
+  }
+  &__list {
+    padding-bottom: 60px;
+    @media (min-width: 768px) {
+      position: absolute;
+      left: 76px;
+      top: 60px;
+    }
+    @media (min-width: 1200px) {
+      position: static;
+    }
   }
 
   &__logo-web {
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: #2196f3;
+    @media (min-width: 1200px) {
+      font-size: 26px;
+      line-height: 1.19;
+    }
   }
 
   &__logo-studio {
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: #ffffff;
+    @media (min-width: 1200px) {
+      font-size: 26px;
+      line-height: 1.19;
+    }
   }
   &__home {
     font-family: "Roboto", sans-serif;
@@ -46,17 +72,32 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #ffffff;
+    text-align: center;
+    display: block;
+    @media (min-width: 1200px) {
+      text-align: start;
+    }
   }
 
   &__item {
-    display: block;
-    margin-top: 20px;
+    @media (min-width: 1200px) {
+      display: block;
+      margin-top: 20px;
+    }
   }
   &__mail {
     margin-top: 9px;
+    text-align: center;
+    @media (min-width: 1200px) {
+      text-align: start;
+    }
   }
   &__tel {
     margin-top: 9px;
+    text-align: center;
+    @media (min-width: 1200px) {
+      text-align: start;
+    }
   }
   &__mail {
     font-family: "Roboto", sans-serif;
@@ -80,16 +121,23 @@
   }
 }
 .footer-social {
-  margin-left: 70px;
-  display: flex;
+  text-align: center;
+
   align-items: flex-start;
   flex-direction: column;
   justify-content: flex-start;
+  @media (min-width: 768px) {
+    position: absolute;
+    top: 65px;
+    right: 89px;
+  }
+  @media (min-width: 1200px) {
+    position: static;
+    margin-left: 70px;
+    display: flex;
+  }
 
   &__icon-titel {
-    display: flex;
-    align-items: center;
-    justify-self: center;
     margin-bottom: 20px;
     font-weight: bold;
     font-size: 14px;
@@ -97,14 +145,31 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #ffffff;
+    @media (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+      justify-self: center;
+    }
   }
   &__icon-list {
     display: flex;
-    justify-content: flex-start;
-    width: 231px;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
     height: 81px;
     align-items: flex-start;
     flex-direction: row;
+    align-content: center;
+    @media (min-width: 1200px) {
+      display: flex;
+      justify-self: center;
+      align-items: center;
+      justify-content: flex-start;
+      width: 231px;
+      height: 81px;
+      align-items: flex-start;
+      flex-direction: row;
+    }
   }
   &__icon {
     fill: #ffffff;
@@ -136,10 +201,19 @@
   }
 }
 .subscribe {
-  position: absolute;
-  left: 600px;
-  top: 72px;
+  @media (min-width: 768px) {
+    padding-top: 247px;
+    margin-left: auto;
+    margin-right: auto;
+    @media (min-width: 1200px) {
+      position: absolute;
+      padding-top: 0;
+      left: 600px;
+      top: 72px;
+    }
+  }
   &__titel {
+    text-align: center;
     margin-bottom: 20px;
     width: 100%;
     font-weight: bold;
@@ -148,50 +222,83 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #ffffff;
+    @media (min-width: 1200px) {
+      text-align: start;
+    }
   }
   &__wrap {
-    display: flex;
-    justify-self: center;
-    align-items: center;
+    @media (min-width: 1200px) {
+      display: flex;
+      justify-self: center;
+      align-items: center;
+    }
   }
   &__form {
-    display: flex;
-    justify-self: center;
-    align-items: center;
+    @media (min-width: 1200px) {
+      display: flex;
+      justify-self: center;
+      align-items: center;
+    }
   }
   &__input {
+    width: 100%;
     padding-left: 16px;
-    width: 358px;
+
     height: 50px;
     margin-right: 12px;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     color: #ffffff;
+    margin-bottom: 20px;
+    @media (min-width: 768px) {
+      display: block;
+      width: 450px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media (min-width: 1200px) {
+      width: 358px;
+      margin-bottom: 0;
+
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
   &__input::placeholder {
     color: rgba(255, 255, 255, 0.3);
   }
   &__btn {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
     font-weight: bold;
     font-size: 16px;
     line-height: calc(30 / 16);
-    display: flex;
-    justify-self: center;
-    align-items: center;
+
     text-align: center;
     justify-content: center;
     letter-spacing: 0.06em;
     color: #ffffff;
-    width: 200px;
+    width: 160px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
     height: 50px;
     background: #2196f3;
     border-radius: 4px;
+    @media (min-width: 480px) {
+      width: 200px;
+    }
+    @media (min-width: 1200px) {
+      margin-left: 12px;
+    }
   }
   &__icon {
     margin-left: 10px;
     width: 24px;
     height: 24px;
     fill: #ffffff;
+    display: block;
   }
 }

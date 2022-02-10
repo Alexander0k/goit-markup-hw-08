@@ -1,14 +1,23 @@
 .check {
-  margin-left: 14px;
+  @media (min-width: 768px) {
+    margin-left: 14px;
+  }
   &__text {
     font-weight: normal;
-    font-size: 14px;
-    line-height: calc(24 / 14);
+    font-size: 7px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: #757575;
     display: flex;
     align-items: center;
     justify-self: center;
+    @media (min-width: 480px) {
+      font-size: 12px;
+    }
+    @media (min-width: 768px) {
+      font-size: 14px;
+      line-height: calc(24 / 14);
+    }
   }
   &__text::before {
     content: "";
