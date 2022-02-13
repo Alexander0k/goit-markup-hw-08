@@ -475,6 +475,16 @@ body {
 .window-menu.is-hidden {
   transform: translate(100%);
 }
+.header__itemm {
+  @media (min-width: 1200px) {
+    margin-right: 30px;
+  }
+}
+.header__itemm + .header__itemm {
+  @media (min-width: 1200px) {
+    margin-right: 0;
+  }
+}
 // --------------------------BUTTON-----------------
 .portfolio {
   padding-top: 60px;
