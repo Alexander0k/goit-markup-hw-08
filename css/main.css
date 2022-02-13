@@ -141,6 +141,12 @@ body {
 
 @media (min-width: 1200px) {
   .header__contact {
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header__contact {
     display: flex;
     align-items: center;
     margin-left: auto;
@@ -346,7 +352,7 @@ body {
   display: flex;
   position: absolute;
   right: 10px;
-  top: 10px;
+  top: 4px;
   margin-right: auto;
   height: 40px;
   width: 40px;
@@ -502,6 +508,18 @@ body {
   transform: translate(100%);
 }
 
+@media (min-width: 1200px) {
+  .header__itemm {
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header__itemm + .header__itemm {
+    margin-right: 0;
+  }
+}
+
 .hero {
   padding: 118px 0;
   background-color: #2f303a;
@@ -511,7 +529,7 @@ body {
   background-size: cover;
 }
 
-@media (min-device-pixel-ratio: 2) {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mob/hero-mob-2x.jpg);
   }
@@ -526,7 +544,7 @@ body {
   }
 }
 
-@media (min-width: 768px) and (min-device-pixel-ratio: 2) {
+@media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tab/hero-tab-2x.jpg);
   }
@@ -539,7 +557,7 @@ body {
   }
 }
 
-@media (min-width: 768px) and (min-width: 1200px) and (min-device-pixel-ratio: 2) {
+@media (min-width: 768px) and (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 768px) and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desk-2x.jpg);
   }
