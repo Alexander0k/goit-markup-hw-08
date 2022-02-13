@@ -5,13 +5,13 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../../images/mob/hero-mob-1x.png);
+    url(../images/mob/hero-mob-1x.png);
   @media (min-device-pixel-ratio: 2) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/mob/hero-mob-2x.jpg);
+      url(../images/mob/hero-mob-2x.jpg);
   }
   background-repeat: no-repeat;
   background-position: center;
@@ -21,13 +21,13 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/tab/hro-bat-1x.jpg);
+      url(../images/tab/hro-bat-1x.jpg);
     @media (min-device-pixel-ratio: 2) {
       background-image: linear-gradient(
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../../images/tab/hero-tab-2x.jpg);
+        url(../images/tab/hero-tab-2x.jpg);
     }
     background-repeat: no-repeat;
     background-position: center;
@@ -37,13 +37,13 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../../images/hero.jpg);
+        url(../images/hero.jpg);
       @media (min-device-pixel-ratio: 2) {
         background-image: linear-gradient(
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
           ),
-          url(../../images/hero-desk-2x.jpg);
+          url(../images/hero-desk-2x.jpg);
       }
       padding: 200px 0;
     }
@@ -58,6 +58,10 @@
     color: #ffffff;
     margin-left: auto;
     margin-right: auto;
+    max-width: 360px;
+    @media (min-width: 768px) {
+      max-width: 360px;
+    }
     @media (min-width: 1200px) {
       font-size: 44px;
       line-height: 1.36;

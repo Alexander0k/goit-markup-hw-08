@@ -1,7 +1,7 @@
 .info {
   padding: 60px 0;
   @media (min-width: 1200px) {
-    padding-top: 94px;
+    padding: 94px 0 0 0;
   }
 
   &__conteiner {
@@ -61,8 +61,11 @@
     text-transform: uppercase;
     margin-bottom: 10px;
     color: #212121;
-    @media (min-width: 1200px) {
+    @media (min-width: 768px) {
       text-align: inherit;
+    }
+    @media (min-width: 1200px) {
+      // text-align: inherit;
     }
   }
   &__list-text {
@@ -77,6 +80,7 @@
     }
     @media (min-width: 1200px) {
       max-width: 270px;
+      margin-bottom: 0;
     }
   }
 }

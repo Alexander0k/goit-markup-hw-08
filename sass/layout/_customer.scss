@@ -1,7 +1,10 @@
 .customer {
   // display: block;
-  // padding-top: 94px;
-  // padding-bottom: 94px;
+
+  @media (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   padding: 60px 0;
   &__list {
     display: flex;
@@ -82,7 +85,14 @@
     display: block;
     margin-bottom: 50px;
     text-align: center;
-    @include font(bold, 36px, 1.17, 0.03em);
+    @media (min-width: 768px) {
+      font-size: 28px;
+      line-height: 1.18;
+    }
+    @media (min-width: 1200px) {
+      font-size: 36px;
+      line-height: 1.17;
+    }
   }
   &__link-icon {
     display: flex;

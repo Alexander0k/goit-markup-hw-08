@@ -105,6 +105,7 @@ body {
 .header {
   width: 100%;
   padding: 10px 0;
+  border-bottom: 1px solid #ececec;
 }
 
 @media (min-width: 768px) {
@@ -335,11 +336,11 @@ body {
 }
 
 .menu-mob__open-btn {
+  display: flex;
   position: absolute;
-  right: 15px;
-  top: 10px;
+  right: 10px;
+  top: 4px;
   margin-right: auto;
-  display: block;
   height: 40px;
   width: 40px;
   background-color: transparent;
@@ -624,6 +625,15 @@ body {
   }
   @media (min-width: 1200px) {
     width: calc(100% / 3 - 30px);
+    &:nth-child(7n) {
+      margin-bottom: 0;
+    }
+    &:nth-child(8n) {
+      margin-bottom: 0;
+    }
+    &:nth-child(9n) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -683,6 +693,7 @@ body {
     }
     @media (min-width: 1200px) {
       position: static;
+      padding-bottom: 0;
     }
   }
 
@@ -857,7 +868,7 @@ body {
 }
 .subscribe {
   @media (min-width: 768px) {
-    padding-top: 247px;
+    padding-top: 190px;
     margin-left: auto;
     margin-right: auto;
     @media (min-width: 1200px) {

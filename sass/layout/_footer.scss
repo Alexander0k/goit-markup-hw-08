@@ -6,6 +6,9 @@
     @media (min-width: 768px) {
       position: relative;
     }
+    @media (min-width: 1200px) {
+      padding: 60px 0;
+    }
   }
   &__conteiner-wrap {
     @media (min-width: 1200px) {
@@ -34,6 +37,7 @@
     }
     @media (min-width: 1200px) {
       position: static;
+      padding-bottom: 0;
     }
   }
 
@@ -202,7 +206,7 @@
 }
 .subscribe {
   @media (min-width: 768px) {
-    padding-top: 247px;
+    padding-top: 190px;
     margin-left: auto;
     margin-right: auto;
     @media (min-width: 1200px) {
