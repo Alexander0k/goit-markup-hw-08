@@ -189,7 +189,7 @@
   display: flex;
   position: absolute;
   right: 10px;
-  top: 4px;
+  top: -6px;
   margin-right: auto;
   height: 40px;
   width: 40px;
@@ -204,7 +204,7 @@
 
 .window-menu {
   position: fixed;
-  z-index: 10;
+  z-index: 100;
   background-color: #fff;
   top: 0;
   left: 0;
@@ -332,5 +332,14 @@
 .header__itemm + .header__itemm {
   @media (min-width: 1200px) {
     margin-right: 0;
+  }
+}
+.conteiner {
+  @media (min-width: 480px) {
+    position: relative;
+    z-index: 2;
+  }
+  @media (min-width: 768px) {
+    position: static;
   }
 }

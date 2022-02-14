@@ -106,6 +106,7 @@ body {
   width: 100%;
   padding: 10px 0;
   border-bottom: 1px solid #ececec;
+  position: relative;
 }
 
 @media (min-width: 768px) {
@@ -158,6 +159,7 @@ body {
 }
 
 .header__logo {
+  position: relative;
   margin-right: 93px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -339,7 +341,7 @@ body {
   display: flex;
   position: absolute;
   right: 10px;
-  top: 4px;
+  top: -6px;
   margin-right: auto;
   height: 40px;
   width: 40px;
@@ -351,7 +353,7 @@ body {
 
 .window-menu {
   position: fixed;
-  z-index: 10;
+  z-index: 100;
   background-color: #fff;
   top: 0;
   left: 0;
@@ -439,6 +441,15 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.conteiner {
+  @media (min-width: 480px) {
+    position: relative;
+    z-index: 2;
+  }
+  @media (min-width: 768px) {
+    position: static;
+  }
 }
 
 .mob-social__list {
@@ -533,7 +544,7 @@ body {
 // }
 
 .portfolio-list-btn {
-  margin-bottom: 56px;
+  margin-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
   @media (min-width: 480px) {
@@ -542,6 +553,10 @@ body {
     align-items: center;
     justify-self: center;
     justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media (min-width: 1200px) {
+    margin-bottom: 56px;
   }
 }
 
@@ -629,9 +644,17 @@ body {
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-sizing 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media (min-width: 480px) {
+    &:nth-child(9n) {
+      margin-bottom: 0;
+    }
+  }
   @media (min-width: 768px) {
     width: calc(100% / 2 - 30px);
     margin-left: 30px;
+    &:nth-child(9n) {
+      margin-bottom: 0;
+    }
   }
   @media (min-width: 1200px) {
     width: calc(100% / 3 - 30px);

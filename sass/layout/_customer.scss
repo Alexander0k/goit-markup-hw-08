@@ -83,15 +83,17 @@
     font-size: 28px;
     line-height: 1.18;
     display: block;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     text-align: center;
     @media (min-width: 768px) {
+      margin-bottom: 30px;
       font-size: 28px;
       line-height: 1.18;
     }
     @media (min-width: 1200px) {
       font-size: 36px;
       line-height: 1.17;
+      margin-bottom: 50px;
     }
   }
   &__link-icon {

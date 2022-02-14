@@ -104,6 +104,7 @@ body {
   width: 100%;
   padding: 10px 0;
   border-bottom: 1px solid #ececec;
+  position: relative;
 }
 
 @media (min-width: 768px) {
@@ -156,6 +157,7 @@ body {
 }
 
 .header__logo {
+  position: relative;
   margin-right: 93px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -337,7 +339,7 @@ body {
   display: flex;
   position: absolute;
   right: 10px;
-  top: 4px;
+  top: -6px;
   margin-right: auto;
   height: 40px;
   width: 40px;
@@ -349,7 +351,7 @@ body {
 
 .window-menu {
   position: fixed;
-  z-index: 10;
+  z-index: 100;
   background-color: #fff;
   top: 0;
   left: 0;
@@ -439,6 +441,19 @@ body {
   justify-content: space-between;
 }
 
+@media (min-width: 480px) {
+  .conteiner {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+@media (min-width: 768px) {
+  .conteiner {
+    position: static;
+  }
+}
+
 .mob-social__list {
   display: flex;
   justify-content: center;
@@ -472,6 +487,18 @@ body {
 
 .window-menu.is-hidden {
   transform: translate(100%);
+}
+
+@media (min-width: 1200px) {
+  .header__itemm {
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header__itemm + .header__itemm {
+    margin-right: 0;
+  }
 }
 
 .portfolio {
@@ -518,7 +545,7 @@ body {
 }
 
 .portfolio-list-btn {
-  margin-bottom: 56px;
+  margin-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -528,6 +555,13 @@ body {
     align-items: center;
     justify-self: center;
     justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .portfolio-list-btn {
+    margin-bottom: 56px;
   }
 }
 
@@ -622,10 +656,19 @@ body {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-sizing 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media (min-width: 480px) {
+  .portfolio-item:nth-child(9n) {
+    margin-bottom: 0;
+  }
+}
+
 @media (min-width: 768px) {
   .portfolio-item {
     width: calc(100% / 2 - 30px);
     margin-left: 30px;
+  }
+  .portfolio-item:nth-child(9n) {
+    margin-bottom: 0;
   }
 }
 
