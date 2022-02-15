@@ -24,6 +24,8 @@
   }
   &__item {
     margin-bottom: 15px;
+    width: 210px;
+    height: 92px;
     width: calc(100% / 2 - 15px);
     justify-content: center;
     width: calc(100% / 2 - 30px);
@@ -32,6 +34,7 @@
       margin-bottom: 30px;
     }
     @media (min-width: 768px) {
+      width: 226px;
       margin-bottom: 30px;
       width: calc(100% / 3 - 30px);
       justify-content: center;
@@ -47,9 +50,9 @@
   &__link {
     margin-left: auto;
     margin-right: auto;
-    // width: 130px;
-    // height: 80px;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     border: 1px solid #afb1b8;
     box-sizing: border-box;
@@ -60,18 +63,11 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
       border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     @media (min-width: 480px) {
-      padding: 16px 52px;
-      width: 210px;
       height: 92px;
-    }
-    @media (min-width: 768px) {
-      width: 226px;
-      padding: 16px 60px;
     }
     @media (min-width: 1200px) {
       max-width: 1200px;
       width: 170px;
-      padding: 16px 32px;
     }
   }
   &__link:hover,

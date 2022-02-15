@@ -1,6 +1,11 @@
 .header {
   width: 100%;
   padding: 10px 0;
+  @media (min-width: 480px) {
+    .conteiner {
+      position: relative;
+    }
+  }
   @media (min-width: 768px) {
     padding: 21px 0;
   }
@@ -186,8 +191,8 @@
   fill: #2196f3;
 }
 .menu-mob__open-btn {
-  display: flex;
   position: absolute;
+  display: flex;
   right: 10px;
   top: -6px;
   margin-right: auto;
@@ -298,6 +303,7 @@
   }
   flex-wrap: wrap;
   @media (min-width: 480px) {
+    justify-content: start;
     flex-wrap: nowrap;
   }
 }
@@ -332,14 +338,5 @@
 .header__itemm + .header__itemm {
   @media (min-width: 1200px) {
     margin-right: 0;
-  }
-}
-.conteiner {
-  @media (min-width: 480px) {
-    position: relative;
-    z-index: 2;
-  }
-  @media (min-width: 768px) {
-    position: static;
   }
 }
